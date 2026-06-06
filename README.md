@@ -5,7 +5,7 @@
 
 [![DOI](https://img.shields.io/badge/DOI-pending-blue.svg)]()
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-[![Version](https://img.shields.io/badge/version-0.3-orange.svg)]()
+[![Version](https://img.shields.io/badge/version-0.4-orange.svg)]()
 
 ---
 
@@ -163,9 +163,10 @@ TALOS is named after the bronze guardian of ancient Crete — forged by Hephaest
 
 ## White Paper
 
-The full TALOS white paper (v0.3) is available in both Chinese and English:
+The full TALOS white paper (v0.4) is available in Chinese (latest) and English (v0.3):
 
-📄 **[TALOS 白皮书 v0.3（中文）](./whitepaper/TALOS_Manifesto_v0.3.md)**
+📄 **[TALOS 白皮书 v0.4（中文·最新）](./whitepaper/TALOS_Manifesto_v0.4.md)**
+📄 **[TALOS 白皮书 v0.4 PDF](./whitepaper/TALOS_Manifesto_v0.4.pdf)**
 📄 **[TALOS Manifesto v0.3 (English)](./whitepaper/TALOS_Manifesto_v0.3_EN.md)**
 
 ---
@@ -192,7 +193,7 @@ If you reference TALOS in your work, please cite:
   author = {外脑玩家},
   title = {TALOS: A Personal Context Operating System for the Age of AI Agents},
   year = {2026},
-  version = {0.3},
+  version = {0.4},
   url = {https://github.com/外脑玩家/talos-framework}
 }
 ```
