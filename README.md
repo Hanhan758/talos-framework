@@ -3,7 +3,7 @@
 > **A Personal Context Operating System for the Age of AI Agents**
 > 一套面向智能体时代的个人上下文操作系统
 
-[![DOI](https://img.shields.io/badge/DOI-pending-blue.svg)]()
+[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.20567444-blue.svg)](https://doi.org/10.5281/zenodo.20567444)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 [![Version](https://img.shields.io/badge/version-0.4-orange.svg)]()
 
