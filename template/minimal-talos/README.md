@@ -9,14 +9,15 @@ A ready-to-use personal context operating system for AI collaboration.
    - `Identity/PROFILE.md` — Your preferences and style
    - `Identity/TELOS.md` — Your goals and values
    - `Identity/CONTEXT.md` — Your current state
-3. Edit `CLAUDE.md` to customize the AI entry point
-4. Point your AI tool (Claude Code, Cursor, etc.) to read `CLAUDE.md` as the system prompt
+3. Edit `AGENTS.md` to customize the tool-neutral AI entry point
+4. Keep `CLAUDE.md` as a compatibility pointer to the same contract
 
 ## Directory Structure
 
 ```
 minimal-talos/
-├── CLAUDE.md              ← AI reads this first (bootloader)
+├── AGENTS.md              ← Any AI reads this first (bootloader)
+├── CLAUDE.md              ← Claude compatibility pointer
 ├── Identity/
 │   ├── PROFILE.md         ← Who you are & how you work
 │   ├── TELOS.md           ← Where you're heading
@@ -47,8 +48,8 @@ Run these regularly to keep your TALOS healthy:
 
 ## Learn More
 
-Read the [TALOS White Paper](../whitepaper/) for the full theory.
+Read the [TALOS White Papers](../../whitepaper/) for the full theory and current operational model.
 
 ---
 
-Built with [TALOS Framework](https://github.com/外脑玩家/talos-framework)
+Built with [TALOS Framework](https://github.com/Hanhan758/talos-framework)
