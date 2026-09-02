@@ -5,7 +5,7 @@
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.20567444-blue.svg)](https://doi.org/10.5281/zenodo.20567444)
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-[![Version](https://img.shields.io/badge/version-0.4-orange.svg)]()
+[![Version](https://img.shields.io/badge/version-0.5--draft-orange.svg)]()
 
 ---
 
@@ -29,9 +29,21 @@ Every time you open a new chat, you start from zero. Your AI doesn't know your s
 
 TALOS is the **architectural layer between you and any AI** — defining what context exists, how it's organized, when it's loaded, and who controls it.
 
+## v0.5 Draft: From Context Structure to an Operating System
+
+The original eight-layer model remains the conceptual foundation. TALOS has since grown an operational architecture for reliable agent work:
+
+- **TALOS** is the parent product and system identity.
+- **TALOS System** owns portfolio state, revisions, evidence, authorization and integration contracts.
+- **lili** is the daily portfolio hub: it reads and explains system facts without becoming a second source of truth.
+- **Specialized apps** own their domain data, workflows and execution engines.
+- **Shared capabilities** provide reusable contracts, guards, adapters and visual runtimes.
+
+Read the [Chinese v0.5 draft](whitepaper/TALOS_Manifesto_v0.5_DRAFT.md) or the [English v0.5 draft](whitepaper/TALOS_Manifesto_v0.5_DRAFT_EN.md). The published v0.4 paper and DOI remain immutable.
+
 ---
 
-## The Eight-Layer Architecture
+## The Foundational Eight-Layer Context Model
 
 TALOS structures personal context into eight interconnected layers:
 
@@ -56,6 +68,18 @@ TALOS structures personal context into eight interconnected layers:
 ```
 
 Each layer has a defined lifecycle: **Write → Retrieve → Compress → Audit → Recycle**.
+
+## The Current Operational Architecture
+
+```text
+TALOS
+├── TALOS System          control plane and contracts
+├── lili                  portfolio hub and safe entry points
+├── Specialized Apps     domain facts, workflows and executors
+└── Shared Capabilities  state, evidence, guards, adapters and visual runtimes
+```
+
+Every managed project has one active outcome, one mainline, explicit blockers, evidence, a checkpoint and a next action. Changes use expected revisions and fail closed on conflict. Cross-app actions follow `Intent → Preview → Approval → Execution → Receipt → Reconciliation`; the owning app executes, while the hub only coordinates and explains.
 
 ---
 
@@ -85,13 +109,14 @@ Three files that define who you are to any AI:
 
 ### 2. Add the AI Entry Point
 
-Create a `CLAUDE.md` (or equivalent) at the root of your knowledge base. This is the **bootloader** — the first file any AI reads when starting a session.
+Create an `AGENTS.md` at the root of your knowledge base. This is the tool-neutral **bootloader**. Agent-specific files such as `CLAUDE.md` should point back to the same contract instead of creating competing instructions.
 
 ### 3. Set Up the Fractal Structure
 
 ```
 your-vault/
-├── CLAUDE.md          ← AI entry point
+├── AGENTS.md          ← tool-neutral AI entry point
+├── CLAUDE.md          ← compatibility pointer
 ├── Identity/
 │   ├── PROFILE.md     ← Who you are
 │   ├── TELOS.md       ← Where you're going
@@ -163,9 +188,11 @@ TALOS is named after the bronze guardian of ancient Crete — forged by Hephaest
 
 ## White Paper
 
-The full TALOS white paper (v0.4) is available in Chinese (latest) and English (v0.3):
+The v0.5 draft and previously published TALOS white papers are available here:
 
-📄 **[TALOS 白皮书 v0.4（中文·最新）](./whitepaper/TALOS_Manifesto_v0.4.md)**
+📄 **[TALOS 白皮书 v0.5 草案（中文·当前）](./whitepaper/TALOS_Manifesto_v0.5_DRAFT.md)**
+📄 **[TALOS Manifesto v0.5 Draft (English)](./whitepaper/TALOS_Manifesto_v0.5_DRAFT_EN.md)**
+📄 **[TALOS 白皮书 v0.4（已发布）](./whitepaper/TALOS_Manifesto_v0.4.md)**
 📄 **[TALOS 白皮书 v0.4 PDF](./whitepaper/TALOS_Manifesto_v0.4.pdf)**
 📄 **[TALOS Manifesto v0.3 (English)](./whitepaper/TALOS_Manifesto_v0.3_EN.md)**
 
@@ -176,7 +203,7 @@ The full TALOS white paper (v0.4) is available in Chinese (latest) and English (
 TALOS is a theoretical framework in active development. Contributions are welcome:
 
 - **Theory**: Propose refinements to the architecture or maturity model
-- **Templates**: Share your Identity Trinity or CLAUDE.md templates
+- **Templates**: Share your Identity Trinity or tool-neutral AGENTS.md templates
 - **Translations**: Help translate the white paper to English and other languages
 - **Implementations**: Build adapters for different AI tools (Claude, GPT, Gemini, etc.)
 
@@ -198,7 +225,7 @@ If you reference TALOS in your work, please cite:
 }
 ```
 
-DOI will be added upon Zenodo registration.
+The existing DOI remains bound to the published v0.4 record. The v0.5 documents are drafts and have no release tag or DOI claim.
 
 ---
 
