@@ -115,4 +115,3 @@ The complete product uses version licensing and supporting services. Basic speci
 This document and its Chinese counterpart are the final TALOS Framework v0.5 texts under CC BY-SA 4.0. They define methods and operating rules. The first-release scope and later stages retain their stated development status; they do not claim all software capabilities are available.
 
 The published v0.4 text, PDF, tag and DOI remain unchanged. v0.5 does not reuse the old DOI as its own version identifier, and no new DOI has been registered. Cite version 0.5, the date 2026-09-06 and the corresponding GitHub version entry.
-
