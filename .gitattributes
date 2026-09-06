@@ -1,1 +1,3 @@
 *.pdf binary
+# Preserve the upstream font license, including its original end-of-line spaces.
+website/public/licenses/INSTRUMENT-SERIF-OFL.txt whitespace=-blank-at-eol

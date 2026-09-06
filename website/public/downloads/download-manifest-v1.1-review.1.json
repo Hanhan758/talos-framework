@@ -1,0 +1,218 @@
+{
+  "classification": "PUBLIC",
+  "version": "1.1-review.1",
+  "fact_date": "2026-09-06",
+  "status": "local-review",
+  "copy_authority": "../publicity-v2/pp5-message-house-v2.md",
+  "logo": "../logo-approved-20260905/talos-logo-approved-20260905.png",
+  "logo_sha256": "e07a4c1de07a44a647e7ad2465fdd80faa5682e481369a48bed8f2ce5b399c15",
+  "font_note": "PDF embeds the available system sans-serif CJK fallback (Arial Unicode MS).",
+  "documents": [
+    {
+      "title": "TALOS 品牌简介与发展叙事",
+      "source": "brand-profile/talos-brand-profile-and-story-v1.md",
+      "source_sha256": "54d05ef2c48ebd787ce2a8c90a9bdd09c3e9e92de04bebd5c9e71efd6e123542",
+      "pdf": "brand-profile/talos-brand-profile-and-story-v1.1-review.1.pdf",
+      "sha256": "fca58a593d392b47980632e9cfc3b2f900747164d04ff78ec80f356051dd3a4c",
+      "pages": 1,
+      "bytes": 1635430
+    },
+    {
+      "title": "TALOS 系统与首版使用路径",
+      "source": "system-and-paths/talos-system-method-and-product-paths-overview-v1.md",
+      "source_sha256": "9f39975f488b9b4f47dbfa355831174eb52d6cd8f65f1c01b1bf9bb89b89b57c",
+      "pdf": "system-and-paths/talos-system-method-and-product-paths-overview-v1.1-review.1.pdf",
+      "sha256": "74ade80d8e993875c713312de4da89b8d139872886ede3f45ef2c9d56dcd9497",
+      "pages": 2,
+      "bytes": 1643760
+    },
+    {
+      "title": "TALOS 系统方法与工作流程",
+      "source": "system-overview/talos-system-method-and-workflow-overview-v1.md",
+      "source_sha256": "87350d8584d3ce626a7d7be96073411aba15590328031c99bcfb2218ddd2dfd4",
+      "pdf": "system-overview/talos-system-method-and-workflow-overview-v1.1-review.1.pdf",
+      "sha256": "09e5c5a8b378081b6b4863384949a6b48a3257930be0e57f9a1b8609cc3bad42",
+      "pages": 2,
+      "bytes": 1633689
+    },
+    {
+      "title": "TALOS 首版与企业演进路径",
+      "source": "product-paths/talos-personal-and-enterprise-paths-overview-v1.md",
+      "source_sha256": "45328cec660795798429f85a5dd4ac52b765cb93c46d45fa8ffe73a594f4f359",
+      "pdf": "product-paths/talos-personal-and-enterprise-paths-overview-v1.1-review.1.pdf",
+      "sha256": "7dd8e9db73d2001dc1bc26d2feff62c3eabe8f2f12da5ef3d1c1be2bba9afd3f",
+      "pages": 2,
+      "bytes": 1644751
+    },
+    {
+      "title": "TALOS 个人工作系统使用指南",
+      "source": "personal-guide/talos-personal-context-system-guide-v1.md",
+      "source_sha256": "880c69b1a75e51d9c03214c8b63f44cb34831a909280ed7f632f91445c65f520",
+      "pdf": "personal-guide/talos-personal-context-system-guide-v1.1-review.1.pdf",
+      "sha256": "179c1473f06117f0c80c52abe723ef6adec17ffe2f2cf4e4b8bf092d6b986166",
+      "pages": 2,
+      "bytes": 1638423
+    },
+    {
+      "title": "TALOS 企业方向说明",
+      "source": "enterprise-handbook/talos-enterprise-ai-data-foundation-handbook-v1.md",
+      "source_sha256": "948912a8adc73f8cb26d952fa62eabccb225e37e9e83785cd2684ffd089772ac",
+      "pdf": "enterprise-handbook/talos-enterprise-ai-data-foundation-handbook-v1.1-review.1.pdf",
+      "sha256": "a75a72b43423cf8c3a8362e6562ac27a9b4b6a7e0f17098539e3527708e8446f",
+      "pages": 2,
+      "bytes": 1648768
+    },
+    {
+      "title": "TALOS 企业方向一页说明",
+      "source": "enterprise-one-pager/talos-enterprise-ai-data-foundation-one-pager-v1.md",
+      "source_sha256": "905536065ebcc05d7497759d465c63d6b7db52c64adea3aea978bf6b4ef219c1",
+      "pdf": "enterprise-one-pager/talos-enterprise-ai-data-foundation-one-pager-v1.1-review.1.pdf",
+      "sha256": "b2bcd9eec0d1ac7c5cdedf8d40bb3a69ac5ed637fe7c4f6eecf405a3cde83fc6",
+      "pages": 1,
+      "bytes": 1605823
+    },
+    {
+      "title": "TALOS 总览分享讲稿",
+      "source": "enterprise-deck/talos-enterprise-overview-deck-v1.md",
+      "source_sha256": "c2c4892fb6720f02556604590e23fd77dd038311e915b24d073c19f1ff09860e",
+      "pdf": "enterprise-deck/talos-enterprise-overview-deck-v1.1-review.1.pdf",
+      "sha256": "8fce10b315e38b50651acfe869a4bb9061a9e18c60d3f4e67201db2d8ca08a0f",
+      "pages": 4,
+      "bytes": 1706884
+    },
+    {
+      "title": "TALOS 产品说明书",
+      "source": "whitepaper/talos-product-whitepaper-v1.md",
+      "source_sha256": "8158e2e2186dfb2185821873cbe8c18a6403c4d15f025067d78de168a4105f2f",
+      "pdf": "whitepaper/talos-product-whitepaper-v1.1-review.1.pdf",
+      "sha256": "73b31cd7ff7ee98cc0659ef9971e69e02bf50f51205f29c88ddcfdb260ddb6f0",
+      "pages": 3,
+      "bytes": 1706833
+    },
+    {
+      "title": "TALOS 常见问题",
+      "source": "faq/talos-faq-v1.md",
+      "source_sha256": "998d0a12eb7c4a8a9150b6afab480733c06fd3d1a7db68aae6d55d9f76c68ffe",
+      "pdf": "faq/talos-faq-v1.1-review.1.pdf",
+      "sha256": "bbafe24bad47863e4a0e71971211b89b789f42512d3d069f3403eb8cb1900112",
+      "pages": 2,
+      "bytes": 1643512
+    },
+    {
+      "title": "TALOS 当前能力与验证范围",
+      "source": "evidence-one-pager/talos-evidence-and-capability-status-v1.md",
+      "source_sha256": "c82fdef37660444c8fe37aa6bb0c068da33483164309347e81a709c5b88672c0",
+      "pdf": "evidence-one-pager/talos-evidence-and-capability-status-v1.1-review.1.pdf",
+      "sha256": "0e0e58e400fff8d84e437002e81428315bb1a4daa83496aa51388e4340da72a3",
+      "pages": 1,
+      "bytes": 1609493
+    },
+    {
+      "title": "TALOS 媒体与合作介绍",
+      "source": "media-kit/talos-media-and-partner-kit-v1.md",
+      "source_sha256": "5b72e0139511d3c244d9613a2afb3a1619f32caafb59714c38ad1839d8ad518e",
+      "pdf": "media-kit/talos-media-and-partner-kit-v1.1-review.1.pdf",
+      "sha256": "eb544af58e4fd6fbe5fb4804776e02bc0b888af69094e5f28874785a65987935",
+      "pages": 2,
+      "bytes": 1640124
+    },
+    {
+      "title": "TALOS 公开技术入口 / Technical Overview",
+      "source": "technical-overview/talos-public-technical-overview-bilingual-v1.md",
+      "source_sha256": "6cb16d3fd41848b0a923ac31ce05d728ae843e3acbf57bb43a51a3ec1e961398",
+      "pdf": "technical-overview/talos-public-technical-overview-bilingual-v1.1-review.1.pdf",
+      "sha256": "c55ea23672b417b93e3f215973d62e2efbc8f0621ab6bff4b3351256f0be8730",
+      "pages": 2,
+      "bytes": 1640140
+    },
+    {
+      "title": "TALOS 产品入口与应用关系",
+      "source": "product-surfaces/talos-product-surfaces-and-interaction-directions-v1.md",
+      "source_sha256": "17514a2e64dea90ead9d4d29d214b0f357ffce65afd721f199f948c34b2ce7a5",
+      "pdf": "product-surfaces/talos-product-surfaces-and-interaction-directions-v1.1-review.1.pdf",
+      "sha256": "cda053480c05b2c44a3614b634fc997a40e9aa30bce80ba04af7610f9ac03b9d",
+      "pages": 1,
+      "bytes": 1615478
+    },
+    {
+      "title": "开始使用 TALOS 前的五个自检",
+      "source": "personal-self-check/talos-personal-context-self-check-v1.md",
+      "source_sha256": "637926b0e6f96af91f7893ed86414fc331af9ce843758ce576688da1121b7be5",
+      "pdf": "personal-self-check/talos-personal-context-self-check-v1.1-review.1.pdf",
+      "sha256": "5feda7ec272ab812dc97c18182274bf1d0cbcfdb7c02cecd4d4ee99a803322ec",
+      "pages": 1,
+      "bytes": 1606567
+    },
+    {
+      "title": "TALOS 简明品牌使用指南",
+      "source": "brand-guide/talos-compact-brand-guide-v1.md",
+      "source_sha256": "cc949ac4c6a0192a4d78bcb7aba18b0b02aa4c453d06b5c37dd593e6ba426890",
+      "pdf": "brand-guide/talos-compact-brand-guide-v1.1-review.1.pdf",
+      "sha256": "086bad8bea46e5eaa6d2afde805bd603030efc4dc880516b9f2fbb4a7ad89fd2",
+      "pages": 2,
+      "bytes": 1632374
+    },
+    {
+      "title": "TALOS 社交宣传文案",
+      "source": "social-assets/talos-social-asset-pack-v1.md",
+      "source_sha256": "5e9086eb76dea0c93e1a7ade5afad1c4a0bd903dec5411e0b0a21a7720d7894b",
+      "pdf": "social-assets/talos-social-asset-pack-v1.1-review.1.pdf",
+      "sha256": "fa222d9b657aa4d7510067602e44e2cda53ad8a03ff1301339e0c991249b940e",
+      "pages": 1,
+      "bytes": 1586835
+    },
+    {
+      "title": "TALOS 邮件与私域介绍草稿",
+      "source": "email-templates/talos-email-and-private-channel-templates-v1.md",
+      "source_sha256": "2bda10b9de014f19604e51a97ca0a67e472d338bbebd7c8f876286dbc5dde692",
+      "pdf": "email-templates/talos-email-and-private-channel-templates-v1.1-review.1.pdf",
+      "sha256": "6f084822c9d1d0fdddce82370a8d9a5562a54353d43c6e628255c55a815a9be8",
+      "pages": 1,
+      "bytes": 1631238
+    },
+    {
+      "title": "TALOS 短内容与视频口播包",
+      "source": "short-content/talos-short-content-pack-v1.md",
+      "source_sha256": "67d7c76e39734e7ab0246945b3fd52c16cef4b3a23e4bd55135acb5d55109130",
+      "pdf": "short-content/talos-short-content-pack-v1.1-review.1.pdf",
+      "sha256": "dc886479e193d974cdfba2342ee07724b8a995f0e437779ad4de89db05f9e048",
+      "pages": 3,
+      "bytes": 1628204
+    },
+    {
+      "title": "TALOS 宣言",
+      "source": "manifesto/talos-manifesto-v1.md",
+      "source_sha256": "0e5d12428dcc01e096a74cf77789dc079e4724dbfdf71970c870a0484455cf11",
+      "pdf": "manifesto/talos-manifesto-v1.1-review.1.pdf",
+      "sha256": "201fc3195e6d438fb692c13a3b37ac5bce7a7e045635d4553384260a7f1faa19",
+      "pages": 1,
+      "bytes": 1633549
+    },
+    {
+      "title": "TALOS 宣言 / Manifesto",
+      "source": "manifesto/talos-manifesto-v1-bilingual.md",
+      "source_sha256": "8c93948b8d2dcb4692641501c63c192d5fba07df06f1b0ad61fcae229daacfdb",
+      "pdf": "manifesto/talos-manifesto-v1.1-review.1-bilingual.pdf",
+      "sha256": "a7bdbeda79496bc4ab0b3154152a4b7ea9344118ddfe26795fb92af3850c60a1",
+      "pages": 2,
+      "bytes": 1635314
+    }
+  ],
+  "presentation": {
+    "title": "TALOS 首版总览演示稿",
+    "source": "enterprise-deck/talos-enterprise-overview-deck-v1.md",
+    "source_sha256": "c2c4892fb6720f02556604590e23fd77dd038311e915b24d073c19f1ff09860e",
+    "slides": 12,
+    "pptx": "enterprise-deck/talos-overview-presentation-v1.1-review.1.pptx",
+    "pptx_sha256": "bd3e3f5447a9a7aceb0eb331ee53a6f5a20c778f6d2b5b7d3a0ea1e831715b7d",
+    "pdf": "enterprise-deck/talos-overview-presentation-v1.1-review.1.pdf",
+    "pdf_sha256": "f7f9e4e28f90625d9b597ad741dd26783b34afd2652eb03b9ba31c77d2bf7045",
+    "render_note": "PPTX converted with LibreOffice; CJK font configuration supplied for rendering."
+  },
+  "bundle": {
+    "file": "talos-publicity-v1.1-review.1.zip",
+    "sha256": "981286f761bdb10d6724776ee10eb64975cbc38f0b1d5d193a2b7fe41ab4c4c2",
+    "bytes": 31261226,
+    "contents": "21 document PDFs + 12-slide PPTX + matching slide PDF + README + SHA256SUMS"
+  }
+}
