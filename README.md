@@ -5,13 +5,14 @@
 TALOS 围绕个人与企业的数据管理，提供与大模型协作的方法、学习路径和场景解决方案，帮助用户把资料和目标转化为可用成果。用什么模型、让 AI 参与多少，由用户选择。
 
 > **当前阶段 · 2026-09-06**
-> Framework v0.5 正式文稿已定稿。软件首版范围已基本确认，完整产品正在建设与验证，尚未正式发售。这个仓库是公开框架、论文与基础模板的入口。
+> Framework v0.5 正式文稿已定稿。软件首版范围已基本确认，完整产品正在建设与验证，尚未正式发售。这个仓库是公开框架、论文、基础模板与官网源码的入口。
 
 ## 从这里开始
 
 | 你想了解什么 | 阅读入口 |
 |---|---|
 | TALOS 的首版做什么 | [首版产品方向](#首版产品方向) |
+| 官网页面、宣传资料与本地预览 | [官网源码与运行说明](website/README.md) |
 | 怎样组织自己的上下文 | [基础模板](template/minimal-talos/README.md) |
 | v0.5 正式框架 | [v0.5 中文正式版](whitepaper/TALOS_Manifesto_v0.5.md) · [English v0.5](whitepaper/TALOS_Manifesto_v0.5_EN.md) |
 | 已发表的框架 | [v0.4 中文论文](whitepaper/TALOS_Manifesto_v0.4.md) · [PDF](whitepaper/TALOS_Manifesto_v0.4.pdf) |
@@ -45,7 +46,7 @@ TALOS 从第一版采用统一的数据标准、协作规范和接入接口。�
 
 | 部分 | 职责 |
 |---|---|
-| TALOS Framework（本仓库） | 公开框架、版本化论文与基础模板 |
+| TALOS Framework（本仓库） | 公开框架、版本化论文、基础模板与官网源码 |
 | 首版规范方案包与插件 | 配置、资料管理、学习引导及三类工作流程的产品实现 |
 | TALOS System | 统一的项目事实、状态、决定、验证与协作接口 |
 | lili 与专业应用 | 按共同规则提供桌面入口或专业能力，兼容范围按版本说明 |
@@ -89,10 +90,12 @@ TALOS helps individuals and businesses manage their data, learn to collaborate w
 
 The first release combines a methods and learning package with an Obsidian plugin. It starts with one user on one macOS device. Source-to-deliverable, goal-to-delivery and repeatable workflows with human review are all in scope. The complete product is still being built and validated; it is not on sale yet.
 
-This repository contains the public framework, papers and basic templates. The published papers retain their versions and license terms. Team collaboration, model subscription access and TALOS World are future directions.
+This repository contains the public framework, papers, basic templates and [website source](website/README.md). The published papers retain their versions and license terms. Team collaboration, model subscription access and TALOS World are future directions.
 
 ## License
 
 Framework material remains under **Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)**. See [LICENSE](LICENSE) for the applicable terms. This introduction does not change licenses for this repository or other TALOS components.
+
+The website preserves its [third-party notices](website/THIRD_PARTY_NOTICES.md) and bundled license texts. These components retain their respective licenses.
 
 作者：外脑玩家。仓库维护：[Hanhan758](https://github.com/Hanhan758)。既有论文的作者、引用与版本信息保留在各篇原文中。

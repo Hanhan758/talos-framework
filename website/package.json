@@ -1,0 +1,19 @@
+{
+  "name": "talos-living-frieze-site",
+  "version": "4.0.0",
+  "description": "TALOS pre-release interactive site using the Codrops relighting technique.",
+  "author": "TALOS; relighting foundation by Dominik Fojcik for Codrops",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "three": "^0.184.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.2.1"
+  }
+}
