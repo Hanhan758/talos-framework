@@ -1,246 +1,98 @@
-# TALOS: Trusted AI Life Operating System
+# TALOS
 
-> **A Personal Context Operating System for the Age of AI Agents**
-> 一套面向智能体时代的个人上下文操作系统
+**从你的资料出发，把大模型用进真实工作。**
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.20567444-blue.svg)](https://doi.org/10.5281/zenodo.20567444)
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-[![Version](https://img.shields.io/badge/version-0.5--draft-orange.svg)]()
+TALOS 围绕个人与企业的数据管理，提供与大模型协作的方法、学习路径和场景解决方案，帮助用户把资料和目标转化为可用成果。用什么模型、让 AI 参与多少，由用户选择。
 
----
+> **当前阶段 · 2026-09-06**
+> Framework v0.5 正式文稿已定稿。软件首版范围已基本确认，完整产品正在建设与验证，尚未正式发售。这个仓库是公开框架、论文与基础模板的入口。
 
-## What is TALOS?
+## 从这里开始
 
-TALOS is a **personal context operating system** — a structured framework that makes your accumulated knowledge, preferences, decisions, and workflows machine-readable for any AI agent.
+| 你想了解什么 | 阅读入口 |
+|---|---|
+| TALOS 的首版做什么 | [首版产品方向](#首版产品方向) |
+| 怎样组织自己的上下文 | [基础模板](template/minimal-talos/README.md) |
+| v0.5 正式框架 | [v0.5 中文正式版](whitepaper/TALOS_Manifesto_v0.5.md) · [English v0.5](whitepaper/TALOS_Manifesto_v0.5_EN.md) |
+| 已发表的框架 | [v0.4 中文论文](whitepaper/TALOS_Manifesto_v0.4.md) · [PDF](whitepaper/TALOS_Manifesto_v0.4.pdf) |
+| 早期产品探索 | [Dashboard 历史项目](https://github.com/Hanhan758/talos-dashboard) |
 
-### The Core Thesis
+## 首版产品方向
 
-> **Models will commoditize. Context will differentiate.**
-> 模型会商品化，上下文会差异化。
+首版将**规范、模板、学习与场景方案包**和 **Obsidian 插件**配套，帮助用户配置自己的大模型工作系统。
 
-Every time you open a new chat, you start from zero. Your AI doesn't know your style, your goals, your past decisions, or your expertise. TALOS solves this by giving any AI a **stable, portable user manual** — not by training a model on your data, but by structuring your context so any model can pick it up instantly.
+| 场景 | 从哪里开始 | 希望得到什么 |
+|---|---|---|
+| 资料变成果 | 选定已有资料，整理、检索并协作撰写 | 有依据、可以使用的报告、方案或内容 |
+| 目标变交付 | 明确目标、组织资料、推进任务 | 可检查的成果与能够继续的项目记录 |
+| 重复工作自动化 | 约定输入、步骤、输出与 AI 参与范围 | 可复用、由人检查结果的流程 |
 
-### What TALOS is NOT
+三类场景均进入首版完整流程的建设范围。任务内引导和教程、示例、练习配套，让用户在完成工作时学习使用方法。
 
-- Not another note-taking app
-- Not a custom model fine-tuned on your data
-- Not a RAG pipeline for document retrieval
-- Not a ChatGPT plugin or browser extension
+首阶段以 **macOS、单用户、单设备本地使用**为切入，Obsidian 笔记库为主，本地文件夹辅助。根据选定资料提出配置建议，对话补充后由用户确认；可以保留现有目录，或确认后整理。
 
-TALOS is the **architectural layer between you and any AI** — defining what context exists, how it's organized, when it's loaded, and who controls it.
+计划支持 MD、TXT、PDF、Word、Excel、PPT 与图片文字识别。已有库适配、资料驱动配置、办公文档与图片识别，以及真实模型完整任务仍需补齐验证。这里的范围说明不等于对应功能已可安装使用。
 
-## v0.5 Draft: From Context Structure to an Operating System
+## 统一基础与母版
 
-The original eight-layer model remains the conceptual foundation. TALOS has since grown an operational architecture for reliable agent work:
+TALOS 从第一版采用统一的数据标准、协作规范和接入接口。前期优先借鉴超级大脑中已由用户验证的真实数据与使用经验，现有部署包和插件作为实现母版，再按产品需求改造和验证。
 
-- **TALOS** is the parent product and system identity.
-- **TALOS System** owns portfolio state, revisions, evidence, authorization and integration contracts.
-- **lili** is the daily portfolio hub: it reads and explains system facts without becoming a second source of truth.
-- **Specialized apps** own their domain data, workflows and execution engines.
-- **Shared capabilities** provide reusable contracts, guards, adapters and visual runtimes.
+基础规则围绕几个可理解的问题组织：资料来自哪里、当前目标是什么、哪些内容已经确认、任务进行到哪一步、谁决定下一步、成果是否有用。
 
-Read the [Chinese v0.5 draft](whitepaper/TALOS_Manifesto_v0.5_DRAFT.md) or the [English v0.5 draft](whitepaper/TALOS_Manifesto_v0.5_DRAFT_EN.md). The published v0.4 paper and DOI remain immutable.
+用户上下文可以包含身份、目标、偏好、经验、项目、样例、工作流程和权限边界。既有八层模型是整理这些内容的方法参考；产品配置以用户的实际资料和工作为依据。
 
----
+## 系统与仓库的关系
 
-## The Foundational Eight-Layer Context Model
+| 部分 | 职责 |
+|---|---|
+| TALOS Framework（本仓库） | 公开框架、版本化论文与基础模板 |
+| 首版规范方案包与插件 | 配置、资料管理、学习引导及三类工作流程的产品实现 |
+| TALOS System | 统一的项目事实、状态、决定、验证与协作接口 |
+| lili 与专业应用 | 按共同规则提供桌面入口或专业能力，兼容范围按版本说明 |
+| TALOS Dashboard | 已停止维护的早期交互探索，保留代码与历史资料 |
+| TALOS World | 在数据和工作基础上逐阶段发展的长期虚拟世界愿景 |
 
-TALOS structures personal context into eight interconnected layers:
+首版先服务个人及企业员工的单人使用，团队与组织协作后续建设。各部分保留自己的源码、数据归属和验证范围，仓库与原型的存在不代表所有能力已进入首版。
 
-```
-┌─────────────────────────────────────────────┐
-│  Layer 8: Boundaries & Permissions          │  ← What the AI cannot do
-├─────────────────────────────────────────────┤
-│  Layer 7: Workflows & Automation            │  ← Recurring patterns
-├─────────────────────────────────────────────┤
-│  Layer 6: Samples & Templates               │  ← Output exemplars
-├─────────────────────────────────────────────┤
-│  Layer 5: Active Projects                   │  ← Current work context
-├─────────────────────────────────────────────┤
-│  Layer 4: Experience & Decisions            │  ← What you've tried & chosen
-├─────────────────────────────────────────────┤
-│  Layer 3: Preferences & Style               │  ← How you like things done
-├─────────────────────────────────────────────┤
-│  Layer 2: Goals & Strategy                  │  ← Where you're heading
-├─────────────────────────────────────────────┤
-│  Layer 1: Identity & Values                 │  ← Who you are
-└─────────────────────────────────────────────┘
-```
+## 怎样评估进展
 
-Each layer has a defined lifecycle: **Write → Retrieve → Compress → Audit → Recycle**.
+真实使用经验、工程测试、合成演示与真实用户成果分别看待。首版验证先检查成果是否满足实际用途，再比较总耗时和人工修改量。当前不提供未经测量的效率倍数或客户成功数字。
 
-## The Current Operational Architecture
+基础工作空间采用本地方式。模型或外部工具调用的数据流向取决于用户所选服务与配置，应明确发送范围。AI 的建议与已确认事实分开，关键决定由用户掌握。
 
-```text
-TALOS
-├── TALOS System          control plane and contracts
-├── lili                  portfolio hub and safe entry points
-├── Specialized Apps     domain facts, workflows and executors
-└── Shared Capabilities  state, evidence, guards, adapters and visual runtimes
-```
+## 开放内容、产品与服务
 
-Every managed project has one active outcome, one mainline, explicit blockers, evidence, a checkpoint and a next action. Changes use expected revisions and fail closed on conflict. Cross-app actions follow `Intent → Preview → Approval → Execution → Receipt → Reconciliation`; the owning app executes, while the hub only coordinates and explains.
+完整产品计划收费，采用版本许可；用户保留已购版本，后续更新可以免费或收费。服务方向包括自助、初始化指导和场景陪跑，也可按需加购。可选年度维护包含约定支持及付费升级优惠。
 
----
+基础规范与部分实现开放，进阶实现与专业服务商业化。**本仓库现有内容继续按已有许可证授权**；其他组件依各自许可证。新产品的具体开放清单、价格、服务细则和发售时间另行公布。
 
-## Maturity Model (L0–L6)
+## 论文与版本
 
-| Level | Stage | Description |
-|-------|-------|-------------|
-| **L0** | No System | Zero persistent context; every conversation starts from scratch |
-| **L1** | Raw Notes | Unstructured notes exist, but AI cannot read them |
-| **L2** | Structured | Identity files (Profile/Telos/Context) exist; AI can read basic preferences |
-| **L3** | Integrated | AI actively reads/writes context; daily workflows automated |
-| **L4** | Self-evolving | System auto-detects stale content, suggests updates, manages lifecycle |
-| **L5** | Multi-agent | Multiple AI agents share your context; routing and conflict resolution exist |
-| **L6** | Sovereign | Full portability across tools; you own and control all context |
+- [v0.5 中文正式版](whitepaper/TALOS_Manifesto_v0.5.md)与[英文正式版](whitepaper/TALOS_Manifesto_v0.5_EN.md)：正式框架文稿；软件实现与验证仍按各自阶段说明。
+- [v0.4 已发表论文](whitepaper/TALOS_Manifesto_v0.4.md)：保留原文及其版本。
+- [v0.3 英文论文](whitepaper/TALOS_Manifesto_v0.3_EN.md)：历史英文版本。
+- [既有 DOI 记录](https://doi.org/10.5281/zenodo.20567444)：仍对应既有发表记录，v0.5 不将旧 DOI 标作本版 DOI，未登记新的 DOI。
 
----
+[v0.5 中文 PDF](whitepaper/TALOS_Manifesto_v0.5.pdf) · [English PDF](whitepaper/TALOS_Manifesto_v0.5_EN.pdf) · [版本说明](RELEASE_NOTES_v0.5.md)
 
-## Quick Start (30 minutes)
+论文、模型与历史模板中的术语按其发表时间理解。当前首版范围以本页的日期和阶段说明为准，不改写已发表论文以追认产品能力。
 
-### 1. Create the Identity Trinity
+## 参与讨论
 
-Three files that define who you are to any AI:
+欢迎围绕资料组织、学习路径、场景方法、模板和接口提出具体问题或改进建议。讨论真实使用时请使用可分享的合成示例，不提交私人资料、密钥或未经授权的客户数据。
 
-**`PROFILE.md`** — Your style, preferences, communication patterns
-**`TELOS.md`** — Your goals, values, and strategic direction
-**`CONTEXT.md`** — Your current state, active projects, recent changes
+## English
 
-### 2. Add the AI Entry Point
+**Start with your own data. Put language models to work.**
 
-Create an `AGENTS.md` at the root of your knowledge base. This is the tool-neutral **bootloader**. Agent-specific files such as `CLAUDE.md` should point back to the same contract instead of creating competing instructions.
+TALOS helps individuals and businesses manage their data, learn to collaborate with language models, and turn information and goals into useful results. Users choose their models, tools and level of AI involvement.
 
-### 3. Set Up the Fractal Structure
+The first release combines a methods and learning package with an Obsidian plugin. It starts with one user on one macOS device. Source-to-deliverable, goal-to-delivery and repeatable workflows with human review are all in scope. The complete product is still being built and validated; it is not on sale yet.
 
-```
-your-vault/
-├── AGENTS.md          ← tool-neutral AI entry point
-├── CLAUDE.md          ← compatibility pointer
-├── Identity/
-│   ├── PROFILE.md     ← Who you are
-│   ├── TELOS.md       ← Where you're going
-│   └── CONTEXT.md     ← What you're doing now
-├── 00-Inbox/
-├── 01-Journal/
-├── 02-Insights/       ← Original thinking
-├── 03-Materials/      ← External content
-├── 04-Projects/
-└── 05-Archive/
-```
-
-### 4. Run the Three Maintenance Loops
-
-| Loop | Frequency | Purpose |
-|------|-----------|---------|
-| `/intake` | Daily | Process inbox → categorize → archive |
-| `/digest` | Weekly | Review AI-observed preferences → confirm → promote |
-| `/maintain` | Weekly | Health scan → detect stale/broken/redundant content |
-
----
-
-## Core Concepts
-
-### Context Health: Three Diseases
-
-| Disease | Symptom | Cure |
-|---------|---------|------|
-| **Scattered (散)** | Information spread across tools, no unified structure | Consolidate into single vault |
-| **Dirty (脏)** | Outdated preferences mixed with current ones | Lifecycle management + audit trails |
-| **Rotten (腐)** | Decisions from 2 years ago still marked "active" | Status taxonomy + automatic staleness detection |
-
-### The Five Operating Mechanisms
-
-1. **Write** — Capture experience in structured form
-2. **Retrieve** — Context-aware loading (only what's needed, when it's needed)
-3. **Compress** — Evolve detailed records into refined patterns
-4. **Audit** — Human reviews AI-suggested changes before they stick
-5. **Recycle** — Outdated content gets archived, not deleted
-
----
-
-## Comparison with Alternatives
-
-| Feature | ChatGPT Memory | Notion AI | RAG Pipeline | TALOS |
-|---------|---------------|-----------|-------------|-------|
-| Ownership | Platform-locked | Platform-locked | Self-hosted | **Self-owned, portable** |
-| Transparency | Black box | Partial | Configurable | **Fully auditable** |
-| Portability | None | Export only | Custom | **Cross-tool by design** |
-| Privacy | Platform sees all | Platform sees all | Self-managed | **Permission layers** |
-| Lifecycle | None | Manual | Manual | **Built-in maintenance** |
-
----
-
-## The Myth Behind the Name
-
-TALOS is named after the bronze guardian of ancient Crete — forged by Hephaestus, powered by ichor (divine fluid), patrolling the shores daily.
-
-| Myth Element | TALOS Mapping |
-|-------------|---------------|
-| **Forging (锻造)** | Your knowledge system is forged, not hoarded |
-| **Ichor (灵液)** | Structured Context flowing between modules |
-| **Patrol (巡逻)** | Daily maintenance loops (intake/digest/maintain) |
-| **Guard (守护)** | Protecting your cognitive sovereignty |
-| **Heel Rivet (命门)** | Human judgment remains the ultimate authority |
-| **Downfall (陨落)** | Without maintenance, even the best system degrades |
-
----
-
-## White Paper
-
-The v0.5 draft and previously published TALOS white papers are available here:
-
-📄 **[TALOS 白皮书 v0.5 草案（中文·当前）](./whitepaper/TALOS_Manifesto_v0.5_DRAFT.md)**
-📄 **[TALOS Manifesto v0.5 Draft (English)](./whitepaper/TALOS_Manifesto_v0.5_DRAFT_EN.md)**
-📄 **[TALOS 白皮书 v0.4（已发布）](./whitepaper/TALOS_Manifesto_v0.4.md)**
-📄 **[TALOS 白皮书 v0.4 PDF](./whitepaper/TALOS_Manifesto_v0.4.pdf)**
-📄 **[TALOS Manifesto v0.3 (English)](./whitepaper/TALOS_Manifesto_v0.3_EN.md)**
-
----
-
-## Contributing
-
-TALOS is a theoretical framework in active development. Contributions are welcome:
-
-- **Theory**: Propose refinements to the architecture or maturity model
-- **Templates**: Share your Identity Trinity or tool-neutral AGENTS.md templates
-- **Translations**: Help translate the white paper to English and other languages
-- **Implementations**: Build adapters for different AI tools (Claude, GPT, Gemini, etc.)
-
-Please open an issue first to discuss what you'd like to change.
-
----
-
-## Citation
-
-If you reference TALOS in your work, please cite:
-
-```bibtex
-@misc{talos2026,
-  author = {外脑玩家},
-  title = {TALOS: A Personal Context Operating System for the Age of AI Agents},
-  year = {2026},
-  version = {0.4},
-  url = {https://github.com/外脑玩家/talos-framework}
-}
-```
-
-The existing DOI remains bound to the published v0.4 record. The v0.5 documents are drafts and have no release tag or DOI claim.
-
----
+This repository contains the public framework, papers and basic templates. The published papers retain their versions and license terms. Team collaboration, model subscription access and TALOS World are future directions.
 
 ## License
 
-This work is licensed under the **Creative Commons Attribution-ShareAlike 4.0 International License** (CC BY-SA 4.0).
+Framework material remains under **Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)**. See [LICENSE](LICENSE) for the applicable terms. This introduction does not change licenses for this repository or other TALOS components.
 
-You are free to share and adapt this material, provided you give appropriate credit and distribute your contributions under the same license.
-
----
-
-## Author
-
-**外脑玩家** (External Brain Player)
-- Building the bridge between personal knowledge management and AI agent collaboration
-- [GitHub](https://github.com/外脑玩家) | [X/Twitter](https://x.com/外脑玩家)
-
-> "Your résumé helps companies understand you. Your portfolio helps clients understand you. TALOS helps AI understand you."
+作者：外脑玩家。仓库维护：[Hanhan758](https://github.com/Hanhan758)。既有论文的作者、引用与版本信息保留在各篇原文中。
