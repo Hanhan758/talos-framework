@@ -1,107 +1,85 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/brand/lockup-horizontal-reverse.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/brand/lockup-horizontal.svg">
+    <img alt="TALOS" src="assets/brand/lockup-horizontal.svg" width="347">
+  </picture>
+</p>
+
 # TALOS
 
-![TALOS 当前内容：Framework v0.5 已发布，官网 10 页，宣传资料 21 份 PDF，演示稿 12 页；完整软件首版建设中](assets/readme/talos-overview.png)
+**从自己的资料出发，与智能体持续协作。**
 
-**从你的资料出发，把大模型用进真实工作。**
+TALOS 探索如何组织资料、目标与经验，让人和智能体在清楚的边界内协作，留下可核对、可接续的成果。用户选择自己的资料、模型和工具，并决定 AI 参与的范围。
 
-TALOS 围绕个人与企业的数据管理，提供与大模型协作的方法、学习路径和场景解决方案，帮助用户把资料和目标转化为可用成果。用什么模型、让 AI 参与多少，由用户选择。
-
-> **当前阶段 · 2026-09-06**
-> Framework v0.5 正式文稿已定稿。软件首版范围已基本确认，完整产品正在建设与验证，尚未正式发售。这个仓库是公开框架、论文、基础模板与官网源码的入口。
+这个仓库汇集 TALOS 的公开框架、理念与系统介绍、基础模板和官网源码。Framework v0.5 文稿已发布；资料库框架包和相关入口仍在建设与分阶段验证。独立 Agent OS 运行系统和 TALOS World 是后续规划，各部分的成熟度不同。
 
 ## 从这里开始
 
-| 你想了解什么 | 阅读入口 |
+| 想了解什么 | 入口 |
 |---|---|
-| TALOS 的首版做什么 | [首版产品方向](#首版产品方向) |
-| 官网页面、宣传资料与本地预览 | [官网源码与运行说明](website/README.md) |
-| 怎样组织自己的上下文 | [基础模板](template/minimal-talos/README.md) |
-| v0.5 正式框架 | [v0.5 中文正式版](whitepaper/TALOS_Manifesto_v0.5.md) · [English v0.5](whitepaper/TALOS_Manifesto_v0.5_EN.md) |
-| 已发表的框架 | [v0.4 中文论文](whitepaper/TALOS_Manifesto_v0.4.md) · [PDF](whitepaper/TALOS_Manifesto_v0.4.pdf) |
-| 早期产品探索 | [Dashboard 历史项目](https://github.com/Hanhan758/talos-dashboard) |
+| TALOS 的理念与协作方式 | [Agent OS 理念](docs/agent-os/manifesto.md) |
+| 系统由哪些部分组成 | [系统与应用关系](docs/agent-os/system-map.md) |
+| 目前已经做到什么、哪些还待验证 | [当前状态](docs/agent-os/status.md) |
+| 未来的世界愿景 | [TALOS World](docs/agent-os/world.md) |
+| 名称与文化来源 | [TALOS 的名称](docs/agent-os/origins.md) |
+| 如何组织自己的资料 | [基础模板](template/minimal-talos/README.md) |
+| 公开论文和历史版本 | [论文与版本](#论文与版本) |
+| 官网源码和本地预览 | [官网说明](website/README.md) |
 
 ## 首版产品方向
 
-首版将**规范、模板、学习与场景方案包**和 **Obsidian 插件**配套，帮助用户配置自己的大模型工作系统。
+当前工作重点是面向个人的资料库框架包：帮助使用者从新建资料库或已有资料出发，组织内容、检索来源，并与自己的智能体工具协作。本机候选已验证部分新建、接入和升级流程；Obsidian 内的显示与完整真实用户流程仍待核对。详细状态和范围见[当前状态](docs/agent-os/status.md)。
 
-![TALOS 首版建设范围：从已有资料配置共同基础，打通资料变成果、目标变交付、重复工作自动化；完整流程仍待真实验证](assets/readme/talos-first-release.png)
+TALOS 控制底座已有特定本机基线的验收记录；跨 AI 的统一入口仍处于接口设计阶段。独立 Agent OS 运行系统尚未开始产品开发。产品入口、插件和长期探索分别推进，仓库中的文稿或示意图不代表所有能力已经集成或可供安装。
 
-配图按已确认需求和当前文件绘制，资料来源与可编辑 SVG 见[介绍图片说明](assets/readme/README.md)。
-
-| 场景 | 从哪里开始 | 希望得到什么 |
-|---|---|---|
-| 资料变成果 | 选定已有资料，整理、检索并协作撰写 | 有依据、可以使用的报告、方案或内容 |
-| 目标变交付 | 明确目标、组织资料、推进任务 | 可检查的成果与能够继续的项目记录 |
-| 重复工作自动化 | 约定输入、步骤、输出与 AI 参与范围 | 可复用、由人检查结果的流程 |
-
-三类场景均进入首版完整流程的建设范围。任务内引导和教程、示例、练习配套，让用户在完成工作时学习使用方法。
-
-首阶段以 **macOS、单用户、单设备本地使用**为切入，Obsidian 笔记库为主，本地文件夹辅助。根据选定资料提出配置建议，对话补充后由用户确认；可以保留现有目录，或确认后整理。
-
-计划支持 MD、TXT、PDF、Word、Excel、PPT 与图片文字识别。已有库适配、资料驱动配置、办公文档与图片识别，以及真实模型完整任务仍需补齐验证。这里的范围说明不等于对应功能已可安装使用。
+本仓库现有官网和宣传资料包含不同时期的说明；其中标注 2026 年 9 月的状态是当时的记录，当前进展以本仓库[状态页](docs/agent-os/status.md)及各组件实际发布说明为准。
 
 ## 统一基础与母版
 
-TALOS 从第一版采用统一的数据标准、协作规范和接入接口。前期优先借鉴超级大脑中已由用户验证的真实数据与使用经验，现有部署包和插件作为实现母版，再按产品需求改造和验证。
-
-基础规则围绕几个可理解的问题组织：资料来自哪里、当前目标是什么、哪些内容已经确认、任务进行到哪一步、谁决定下一步、成果是否有用。
-
-用户上下文可以包含身份、目标、偏好、经验、项目、样例、工作流程和权限边界。既有八层模型是整理这些内容的方法参考；产品配置以用户的实际资料和工作为依据。
-
-## 系统与仓库的关系
-
-| 部分 | 职责 |
-|---|---|
-| TALOS Framework（本仓库） | 公开框架、版本化论文、基础模板与官网源码 |
-| 首版规范方案包与插件 | 配置、资料管理、学习引导及三类工作流程的产品实现 |
-| TALOS System | 统一的项目事实、状态、决定、验证与协作接口 |
-| lili 与专业应用 | 按共同规则提供桌面入口或专业能力，兼容范围按版本说明 |
-| TALOS Dashboard | 已停止维护的早期交互探索，保留代码与历史资料 |
-| TALOS World | 在数据和工作基础上逐阶段发展的长期虚拟世界愿景 |
-
-首版先服务个人及企业员工的单人使用，团队与组织协作后续建设。各部分保留自己的源码、数据归属和验证范围，仓库与原型的存在不代表所有能力已进入首版。
-
-## 怎样评估进展
-
-真实使用经验、工程测试、合成演示与真实用户成果分别看待。首版验证先检查成果是否满足实际用途，再比较总耗时和人工修改量。当前不提供未经测量的效率倍数或客户成功数字。
-
-基础工作空间采用本地方式。模型或外部工具调用的数据流向取决于用户所选服务与配置，应明确发送范围。AI 的建议与已确认事实分开，关键决定由用户掌握。
-
-## 开放内容、产品与服务
-
-完整产品计划收费，采用版本许可；用户保留已购版本，后续更新可以免费或收费。服务方向包括自助、初始化指导和场景陪跑，也可按需加购。可选年度维护包含约定支持及付费升级优惠。
-
-基础规范与部分实现开放，进阶实现与专业服务商业化。**本仓库现有内容继续按已有许可证授权**；其他组件依各自许可证。新产品的具体开放清单、价格、服务细则和发售时间另行公布。
+TALOS 以资料、任务和协作规则为共同基础；资料库框架包以既有实践为参考逐步建设。各部分的可用范围、验证证据与当前状态分别说明，见[系统与应用关系](docs/agent-os/system-map.md)。
 
 ## 论文与版本
 
-- [v0.5 中文正式版](whitepaper/TALOS_Manifesto_v0.5.md)与[英文正式版](whitepaper/TALOS_Manifesto_v0.5_EN.md)：正式框架文稿；软件实现与验证仍按各自阶段说明。
-- [v0.4 已发表论文](whitepaper/TALOS_Manifesto_v0.4.md)：保留原文及其版本。
-- [v0.3 英文论文](whitepaper/TALOS_Manifesto_v0.3_EN.md)：历史英文版本。
-- [既有 DOI 记录](https://doi.org/10.5281/zenodo.20567444)：仍对应既有发表记录，v0.5 不将旧 DOI 标作本版 DOI，未登记新的 DOI。
+- [Framework v0.5 中文正式版](whitepaper/TALOS_Manifesto_v0.5.md) · [English v0.5](whitepaper/TALOS_Manifesto_v0.5_EN.md) · [版本说明](RELEASE_NOTES_v0.5.md)
+- [v0.5 中文 PDF](whitepaper/TALOS_Manifesto_v0.5.pdf) · [English PDF](whitepaper/TALOS_Manifesto_v0.5_EN.pdf)
+- [v0.4 已发表论文](whitepaper/TALOS_Manifesto_v0.4.md) · [PDF](whitepaper/TALOS_Manifesto_v0.4.pdf) · [既有 DOI](https://doi.org/10.5281/zenodo.20567444)
+- [v0.3 英文论文](whitepaper/TALOS_Manifesto_v0.3_EN.md) · [GitHub Releases](https://github.com/Hanhan758/talos-framework/releases)
 
-[v0.5 中文 PDF](whitepaper/TALOS_Manifesto_v0.5.pdf) · [English PDF](whitepaper/TALOS_Manifesto_v0.5_EN.pdf) · [版本说明](RELEASE_NOTES_v0.5.md)
+已发表论文保留原文与版本；既有 DOI 对应其原发表记录，不作为 v0.5 或本次更新的新 DOI。论文及历史模板中的术语按其发表时间理解。
 
-论文、模型与历史模板中的术语按其发表时间理解。当前首版范围以本页的日期和阶段说明为准，不改写已发表论文以追认产品能力。
+## 系统与仓库的关系
+
+[2026-09-10 Agent OS 公开版本快照](history/agent-os-2026-09-10/README.md)保留原文、图解、来源和校验清单。它是历史记录，其中的阶段描述不代表现在的产品状态。旧仓库的原始提交和文件仍可从 [talos-agent-os](https://github.com/Hanhan758/talos-agent-os) 查阅。
+
+[TALOS Dashboard](https://github.com/Hanhan758/talos-dashboard) 是已停止维护的早期交互探索，仓库已归档。Obsidian 插件的源码及实际可下载版本见独立的 [TALOS Plugin 仓库](https://github.com/WAINAO-Haaper/talos-plugin)。
+
+## 怎样评估进展
+
+设计、代码、本机测试、真实使用和用户验收是不同的证据。每项能力按对应版本的验证范围说明，不以文稿、原型或演示代替实际结果；见[当前状态](docs/agent-os/status.md)。
+
+## 开放内容、产品与服务
+
+公开框架、Agent OS 内容与其他组件的使用边界分别见下方权利说明。历史产品和服务设想保留在[2026 年 9 月首页版本](https://github.com/Hanhan758/talos-framework/blob/17ec9b7c02d552dbf086a3fbdde31538eff21255/README.md)，不视为当前的价格或发售承诺。
 
 ## 参与讨论
 
-欢迎围绕资料组织、学习路径、场景方法、模板和接口提出具体问题或改进建议。讨论真实使用时请使用可分享的合成示例，不提交私人资料、密钥或未经授权的客户数据。
-
-## English
-
-**Start with your own data. Put language models to work.**
-
-TALOS helps individuals and businesses manage their data, learn to collaborate with language models, and turn information and goals into useful results. Users choose their models, tools and level of AI involvement.
-
-The first release combines a methods and learning package with an Obsidian plugin. It starts with one user on one macOS device. Source-to-deliverable, goal-to-delivery and repeatable workflows with human review are all in scope. The complete product is still being built and validated; it is not on sale yet.
-
-This repository contains the public framework, papers, basic templates and [website source](website/README.md). The published papers retain their versions and license terms. Team collaboration, model subscription access and TALOS World are future directions.
+欢迎在 [Framework Issues](https://github.com/Hanhan758/talos-framework/issues) 讨论公开内容；请使用可分享的示例，不提交私人资料、密钥或未经授权的客户数据。
 
 ## License
 
-Framework material remains under **Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0)**. See [LICENSE](LICENSE) for the applicable terms. This introduction does not change licenses for this repository or other TALOS components.
+本仓库包含不同来源和权利范围的内容：
 
-The website preserves its [third-party notices](website/THIRD_PARTY_NOTICES.md) and bundled license texts. These components retain their respective licenses.
+- Framework 原有材料继续按 [CC BY-SA 4.0](LICENSE) 授权；既有论文、模板及第三方内容仍按各自声明使用。
+- Agent OS 历史快照中的原创文字与图解保留原有权利，未因迁入本仓库而改为开放许可；请阅读其 [NOTICE](history/agent-os-2026-09-10/NOTICE.md) 和 [PROVENANCE](history/agent-os-2026-09-10/PROVENANCE.md)。
+- 本仓库新整理的 Agent OS 文档沿用其原有权利声明，详见[本目录权利说明](docs/agent-os/NOTICE.md)；[品牌标志与资产](assets/brand/README.md)、第三方素材和官网依各自的来源与许可处理。官网第三方材料详见 [THIRD_PARTY_NOTICES](website/THIRD_PARTY_NOTICES.md)。
 
-作者：外脑玩家。仓库维护：[Hanhan758](https://github.com/Hanhan758)。既有论文的作者、引用与版本信息保留在各篇原文中。
+仓库公开可阅读不等于所有内容具有相同的再利用许可。各部分的原有授权、适用的法定例外及 GitHub 平台权利继续适用。
+
+## English
+
+TALOS explores a way to organize personal information, goals and experience for ongoing work with AI agents. Framework v0.5 is published; the knowledge workspace package and related interfaces remain under development and staged validation. The independent Agent OS runtime and TALOS World are future directions. See the [current status](docs/agent-os/status.md) for the scope and limits of each part.
+
+Framework materials retain their existing [CC BY-SA 4.0 license](LICENSE). The [Agent OS historical snapshot](history/agent-os-2026-09-10/NOTICE.md) retains its original rights notice; third-party materials remain subject to their own terms.
+
+作者：外脑玩家 · 维护：[Hanhan758](https://github.com/Hanhan758)
