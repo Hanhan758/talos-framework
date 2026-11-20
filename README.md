@@ -24,6 +24,8 @@ TALOS 探索如何组织资料、目标与经验，让人和智能体在清楚�
 | 未来的世界愿景 | [TALOS World](docs/agent-os/world.md) |
 | 名称与文化来源 | [TALOS 的名称](docs/agent-os/origins.md) |
 | 如何组织自己的资料 | [基础模板](template/minimal-talos/README.md) |
+| 给已有 Obsidian 库加工作台插件 | [TALOS for Obsidian](https://github.com/WAINAO-Haaper/talos-plugin)（macOS / Windows） |
+| 在 Mac 上试用超级大脑资料库测试包 | [TALOS 超级大脑测试包](https://github.com/Hanhan758/talos-superbrain-releases)（candidate.22 八插件测试版） |
 | 公开论文和历史版本 | [论文与版本](#论文与版本) |
 | 官网源码和本地预览 | [官网说明](website/README.md) |
 
@@ -52,7 +54,7 @@ TALOS 以资料、任务和协作规则为共同基础；资料库框架包以�
 
 [2026-09-10 Agent OS 公开版本快照](history/agent-os-2026-09-10/README.md)保留原文、图解、来源和校验清单。它是历史记录，其中的阶段描述不代表现在的产品状态。旧仓库的原始提交和文件仍可从 [talos-agent-os](https://github.com/Hanhan758/talos-agent-os) 查阅。
 
-[TALOS Dashboard](https://github.com/Hanhan758/talos-dashboard) 是已停止维护的早期交互探索，仓库已归档。Obsidian 插件的源码及实际可下载版本见独立的 [TALOS Plugin 仓库](https://github.com/WAINAO-Haaper/talos-plugin)。
+[TALOS Dashboard](https://github.com/Hanhan758/talos-dashboard) 是已停止维护的早期交互探索，仓库已归档。Obsidian 插件的源码及实际可下载版本见独立的 [TALOS Plugin 仓库](https://github.com/WAINAO-Haaper/talos-plugin)；面向 macOS 的资料库部署测试包见 [TALOS 超级大脑分发仓库](https://github.com/Hanhan758/talos-superbrain-releases)。
 
 ## 怎样评估进展
 

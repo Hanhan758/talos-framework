@@ -14,7 +14,7 @@
 | `proof.html`、`next.html`、`resources.html` | 进展、服务与资料下载 |
 | `src/` | 共用样式、Three.js 交互与静态降级逻辑 |
 | `public/brand/` | 当前主页使用的透明底白色字母 Logo，黄色 O 保留 |
-| `public/downloads/` | 21 份资料 PDF、12 页演示稿 PPTX 及对应 PDF、完整 ZIP 与原始校验清单 |
+| `public/downloads/` | 21 份资料 PDF、12 页演示稿 PPTX 及对应 PDF 与原始校验清单（完整 ZIP 改由 GitHub Release [`publicity-v1.1-review.1`](https://github.com/Hanhan758/talos-framework/releases/tag/publicity-v1.1-review.1) 分发） |
 | `public/fonts/`、`public/textures/`、`public/licenses/` | 字体、图像及深度图、第三方许可文本 |
 
 ## 本地运行
